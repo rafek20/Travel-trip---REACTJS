@@ -1,0 +1,110 @@
+:root{
+    --PrimaryColor:hsl(23, 93%, 51%);
+    --HoverColor:hsl(23, 90%, 51%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:rgb(190,190,190);
+    --inputColor:hsl(330,12%,97%);
+  }
+  /* /* .about{ */
+    .secContainer{
+
+     }
+     .title{
+            color:var(--blackColor);
+            line-height: 1.5rem;
+            padding-bottom: .2rem;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .mainContent{
+            gap: 1rem;
+        }
+        .singleItem{
+            text-align: center;
+        }
+        .i1{
+            background: rgba(247,144,54,0.265);
+            width:100px;
+            border-radius: 50%;
+            padding:1rem
+        }
+        h3{
+            font-weight:700;
+            color:var(--blackColor);
+            padding:.5rem;
+        }
+        p2{
+            font-size: 13px;
+            font-weight: 500;
+            padding-bottom: .5rem;
+            color:var(--textColor);
+            
+        }
+      .videoCard{
+            margin-top: 1rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.73), rgba(0,0,0,0.990)),url(../../Assets/map1.jpg);;
+            /* background-image:url(../../Assets/map.jpg.jpg); */
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+        }
+        h2{
+            color:var(--WhiteColor);
+            font-weight: 600;
+            padding-bottom: 1rem;
+        }
+        .cardContent{
+            gap:2rem;
+            padding:2rem 1rem;
+        }
+        p1{
+            color:var(--WhiteColor);
+            opacity: .7;
+            font-size:12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+        .cardVideo{
+            border:2px solid var(--WhiteColor);
+            height: 200px;
+            width:100%;
+            border-radius:10px;
+            overflow: hidden;
+        }
+        video{
+            height:100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+@media screen and (min-width:720px) {
+        .cardContent{
+            gap:4rem;
+            padding: 4rem 3rem;
+    }
+        h2{
+            font-size: 2rem;
+        }
+        p1{
+            opacity: .7;
+            font-size: 15px;
+        }
+        .cardContent{
+            grid-template-columns: repeat(2,1fr);
+
+        }      
+}
+@media screen and (min-width:884px) {
+        .mainContent{
+            grid-template-columns: repeat(3,1fr) ;
+        }
+}
+@media screen and (min-width:1024px) {
+  .mainContent{
+    padding: 2.5rem;
+  }  
+}

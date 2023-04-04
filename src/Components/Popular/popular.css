@@ -1,0 +1,223 @@
+:root{
+    --PrimaryColor:hsl(23, 93%, 51%);
+    --HoverColor:hsl(23, 90%, 51%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:rgb(190,190,190);
+    --inputColor:hsl(330,12%,97%);
+    --box-shadow: 0 2px 8px 2px rgba(178,178,178,0.334);
+}
+.popular{
+    padding-top: 22rem;
+ }
+/* .secContainerpop{} */
+    .secHeaderpop{
+        flex-direction: column;
+        align-items:flex-start;
+        gap:1rem;
+    }
+    /* .textDivpop{} */
+        .secTitlepop{
+            color:var(--blackColor);
+            line-height: 1.5rem;
+            padding-bottom: .5rem;
+    }
+    p29{
+        font-size: 13px;
+        color:var(--textColor);
+        font-weight: 500;
+    }
+    .iconsDivpop{
+        gap:0.5rem;
+    }
+    .iconspop{
+        padding: .5rem;
+        background: var(--greyText);
+        border-radius: 50%;
+        font-size: 2.5rem;
+    }
+    .iconspop:hover{
+        background: var(--blackColor);
+        color: var(--WhiteColor);
+    }
+    .leftIcon{
+        background: var(--blackColor);
+        color:var(--WhiteColor);
+    }
+    .leftIcon:hover{
+        background: var(--greyText);
+        color:var(--blackColor);
+    }
+    .mainContentpop{
+        padding: 2rem 0;
+        gap:1rem;
+    }
+    .singleDestination{
+        height:290px;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.845);
+    }
+    .destImagepop{
+        width:100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .overlayInfo{
+        position: absolute;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        /* padding: 1rem 1.5 rem; */
+        justify-content: center;
+        flex-direction: column;
+        background: linear-gradient(rgba(0,0,0,0.846),rgba(0,0,0,.759));
+        bottom:0;
+        width:100%;
+        height:0.1;
+        overflow: hidden;
+    }
+    h3{
+        color:var(--WhiteColor);
+        font-weight: 600;
+    }
+    p30{
+        color:var(--WhiteColor);
+        opacity: .7;
+        font-size:13px;
+    }
+    .iconpop1{
+        position: absolute;
+        right:10px;
+        bottom:10px;
+        padding: .5rem;
+        background: var(--PrimaryColor);
+        font-size: 2.5rem;
+        border-radius: 50%;
+        color:var(--WhiteColor);
+        border:1px solid transparent;
+        transition: .3s ease;
+    }
+    .iconpop1:hover{
+        background: var(--blackColor);
+        border: 1px solid var(--PrimaryColor);
+        color:var(--PrimaryColor);
+    }
+    .destfooterpop{
+        padding: 1rem;
+    }
+    .number{
+        font-size: 2rem;
+        font-weight: 700;
+        color:var(--blackColor);
+        position: relative;
+        width:max-content;
+        top:0px;
+        left:10px;
+    }
+    .number::after{
+        content:'';
+        position:absolute;
+        background: var(--PrimaryColor);
+        top:45%;
+        right:-150%;
+        height:5px;
+        width:45px;
+        border-radius: 1rem;
+    }
+    .destTextpop{
+        justify-content: space-between;
+    }
+    h6{
+        color:var(--blackColor);
+        font-size: 15px;
+        position: relative;
+        left:10px;
+    }
+
+    .flex{
+        font-size: 16px;
+        font-weight: 600;
+        align-items: flex-start;
+        transform: translateY(5px);
+    }
+    .iconpos{
+        color:var(--PrimaryColor);
+    }
+    .overlayInfo:hover{
+        overflow: visible;
+        padding: 1rem 1.5rem;
+        height: 100%;
+        cursor: pointer;
+    }
+
+
+ /* Media Query ===============> */
+  @media screen and (min-width:480px) {
+   .popular{
+    padding-top:10rem;
+   }
+  } 
+
+  @media screen and (min-width:480px) {
+    .secheaderpop{
+        width:100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textDivpop{
+        text-align: start;
+        max-width: 70%;
+    }
+    .iconsDivpop{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:556px) {
+    .secheaderpop{
+        width:100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .textDivpop{
+        text-align: start;
+        max-width: 70%;
+    }
+    .iconsDivpop{
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .popular{
+        padding-top: 7rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .popular{
+        padding-top: 10rem;
+    }
+    .secTitlepop{
+        font-size: 2.2rem;
+    }
+    p29{
+        font-size: 15px;
+    }
+    .mainContentpop{
+        grid-template-columns: repeat(4,1fr);
+        gap:1.5rem !important;
+    }
+}

@@ -1,0 +1,222 @@
+:root{
+    --PrimaryColor:hsl(23, 93%, 51%);
+    --HoverColor:hsl(23, 90%, 51%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:rgb(190,190,190);
+    --inputColor:hsl(330,12%,97%);
+  }
+.header08{
+        position: fixed;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        background:transparent;
+        width:100%;
+        padding: 1rem;
+        z-index: 1000;
+    }
+    .logoDiv{}
+.logo08{
+        /* color: var(--PrimaryColor); */
+        font-weight: 500;
+        /* cursor: pointer; */
+        margin-top:0;
+        /* align-items: center; */
+        /* justify-content: center;          */
+    }
+.toggleNavbar{
+    color:var(--PrimaryColor);
+    font-size: 25px;
+    margin-right: 10px;
+}
+@media screen and (max-width:768px) {
+    .navBar{
+        background:var(--greyBg);
+        position: absolute;
+        height: max-content;
+        padding:1rem;
+        width:100%;
+        top: 0;
+        left:-500%;
+        box-shadow: 0 2px 4px rgba(209,209,209,0.904);
+        transition: .5s ease;
+        z-index: 1000;
+    }
+    .navLists1{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navItem{
+        padding: 1rem 0;
+        text-align: center;
+        /* On the wide screen padding should be :0 1rem */
+    }
+    .navLink{
+        color: var(--textColor);
+        font-size: .9rem;
+        font-weight: 600;
+    }
+    .navLink:hover{
+        color:var(--PrimaryColor);
+    }
+}
+   .headerBtns{
+        flex-direction: row;
+         position: relative;
+        top:-20px;
+        
+   }  
+   .btn{
+    margin-top: 1rem;
+    position:relative;
+    left:-144px;
+    /* On the wide screen margin-left should be 1rem */
+   }
+   .a20{
+    font-weight: 600;
+   }
+   .a20:hover{
+    color:var(--WhiteColor);
+    background: var(--HoverColor);
+   }
+   .loginBtn{
+    background: var(--PrimaryColor);
+    border:1px solid var(--PrimaryColor);
+    color:var(--PrimaryColor);
+    
+   }
+   .a20{
+    color:var(--PrimaryColor);
+   }
+   .closeNavbar{
+    position: absolute;
+    top: 1rem;
+    right:1.5rem;
+    color:var(--PrimaryColor);
+}
+.closeNavbar,.icon11{
+    color:var(--HoverColor);
+    cursor: pointer;
+    font-size: 25px;
+} 
+.activeNavbar{
+    left:0;
+}
+.activeHeader08{
+    background: var(--greyBg);
+    box-shadow: 0 2px 8x 2px rgba(178,178,178,0.45);
+}
+
+ @media screen and (min-width: 375px) {
+   .headerBtns {
+    background: whitesmoke;
+position: relative;
+left:75%;  
+justify-content: center;  
+flex-direction: column;    
+}
+.navItem{
+ position: relative;
+ left:45%;   
+} 
+.headerBtns .a20{
+    color: var(--WhiteColor);
+}
+ }
+@media screen and (min-width:769px) {
+    .toggleNavbar, .closeNavbar{
+        display:none;
+        font-size: 25px;
+    }
+    .header{
+        padding: 1.5rem 2rem !important;
+    }
+        .navBar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        .navItem{
+            
+        }
+        .navLink{
+            color:var(--WhiteColor);
+            padding: 0 .45rem;
+            font-size:.9rem;
+            font-weight:400;
+            align-items: center;
+            position: relative;
+            left:-360px;
+        }
+        .navLink:hover{
+            color:var(--PrimaryColor)
+        }
+        .btn{
+            margin-left: 1rem;
+        }
+        .a20{
+            color:var(--WhiteColor);
+            font-weight: 500;
+        }
+        .loginBtn{
+            background: none;
+            border:1px solid var(--PrimaryColor);
+            flex-direction: row;
+            justify-content:space-between;
+            
+        }
+        .loginBtn:hover{
+            background: var(--PrimaryColor);
+        }
+    }
+    @media screen and (min-width:960px) {
+        /* .header{
+            .navLists{ */
+                .navItem{
+                    padding: 0 .7rem;
+                }
+            }
+  @media screen and (min-width:1024px) {
+         .header{
+            padding:1rem 8.5rem;
+         }
+        
+         .loginBtn{
+            position:relative;
+            left:-455px;
+            top:-5px;
+            /* height: 25px; */
+         }
+         .navLists1{
+            position: relative;
+            left:-115px;
+            top:-1px;
+         }
+         .headerBtns{
+            flex-direction: row;
+         }
+         
+         .flexit{
+            position: relative;
+            top:-9px;
+         }
+         
+        }      
+        
+    
+    
+
+
+
+
+
+
+   
+
